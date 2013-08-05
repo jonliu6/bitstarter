@@ -54,6 +54,10 @@ var checkURL = function(url, checksfile) {
 
       var outJson =  JSON.stringify(out, null, 4);
       console.log( outJson );
+
+      var fname="hw_part3.json";
+      fs.writeFileSync(fname, outJson);
+      console.log("Json output is saved into " + fname + ".");
     });
 };
 
